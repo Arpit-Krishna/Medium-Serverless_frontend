@@ -77,7 +77,8 @@ export const Blog = () => {
                     <div>
                         <div className="text-gray-500 mb-2">About the Author</div>
                         <div className="text-gray-700 text-sm">
-                            {blog.author.bio || "No bio available."}
+                            {/* {blog.author.bio || "No bio available."} */}
+                            "No Bio Available"
                         </div>
                     </div>
                 </div>
