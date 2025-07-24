@@ -89,7 +89,7 @@ export const Post = () => {
             {/* Top Bar */}
             <div className="flex items-center justify-between px-8 py-4 border-b">
                 <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
+                    <div onClick={() => navigate("/")} className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
                         <span className="text-white text-2xl font-bold">●●</span>
                     </div>
                     <span className="font-medium text-gray-700">

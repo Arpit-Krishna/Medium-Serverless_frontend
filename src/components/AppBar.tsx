@@ -8,7 +8,7 @@ export const AppBar = () => {
             <div className="flex items-center justify-between max-w-7xl mx-auto py-3 px-6">
                 {/* Logo */}
                 <div className="flex items-center">
-                    <span className="text-3xl font-serif font-bold tracking-tight">Medium</span>
+                    <span onClick={() => navigate("/")} className="text-3xl font-serif font-bold tracking-tight">Medium</span>
                 </div>
                 {/* Search */}
                 <div className="flex-1 flex justify-center mx-8">
