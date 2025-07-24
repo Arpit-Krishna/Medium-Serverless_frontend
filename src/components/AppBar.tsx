@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 export const AppBar = () => {
     const navigate = useNavigate();
     return (
-        <div className="border-b bg-white shadow">
+        <div className="border-b bg-white shadow select-none">
             <div className="flex items-center justify-between max-w-7xl mx-auto py-3 px-6">
                 {/* Logo */}
                 <div className="flex items-center">
-                    <span onClick={() => navigate("/")} className="text-3xl font-serif font-bold tracking-tight">Medium</span>
+                    <span onClick={() => navigate("/")} className="text-3xl font-serif font-bold tracking-tight cursor-pointer select-none">Medium</span>
                 </div>
                 {/* Search */}
                 <div className="flex-1 flex justify-center mx-8">
@@ -25,10 +25,10 @@ export const AppBar = () => {
                     </div>
                 </div>
                 {/* Actions */}
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-6 cursor-pointer">
                     <button
                         onClick={() => navigate("/post")}
-                        className="flex items-center gap-1 text-gray-700 hover:text-black"
+                        className="flex items-center gap-1 text-gray-700 hover:text-black cursor-pointer"
                     >
                         <TfiWrite />
                         <span>Write</span>
